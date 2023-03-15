@@ -4,8 +4,6 @@
 
 # Dispatch305 React Frontend 
 
-![React js version](https://img.shields.io/badge/React_js-17.0.2-4c566a?logo=react&&longCache=truelogoColor=white&colorB=pink&style=flat-square&colorA=4c566a) ![Bootstrap version](https://img.shields.io/badge/Bootstrap-5.1.3-4c566a?logo=bootstrap&&longCache=true&logoColor=white&colorB=pink&style=flat-square&colorA=4c566a) ![Flask version](https://img.shields.io/badge/Flask-2.0.3-4c566a?logo=flask&&longCache=truelogoColor=white&colorB=pink&style=flat-square&colorA=4c566a) ![Flask-RESTX](https://img.shields.io/badge/Flask--RESTX-0.5.1-red.svg?longCache=true&style=flat-square&logo=flask&logoColor=white&colorA=4c566a&colorB=pink) ![Forks](https://img.shields.io/github/forks/Ceci-Aguilera/dispatch305_react_frontend?&&longCache=true&logoColor=white&colorB=yellow&style=flat-square&colorA=4c566a) ![Commit activity](https://img.shields.io/github/commit-activity/y/Ceci-Aguilera/dispatch305_react_frontend/master?&&longCache=true&logoColor=white&colorB=green&style=flat-square&colorA=4c566a)
-
 
 </div>
 
@@ -44,7 +42,7 @@ __Dispatch305__ is a service that helps dispatchers to communicate with both dri
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/Ceci-Aguilera/dispatch305_react_frontend.git
+
    ```
 
 1. Install Docker and Docker Compose
@@ -71,7 +69,7 @@ __Dispatch305__ is a service that helps dispatchers to communicate with both dri
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/Ceci-Aguilera/dispatch305_react_frontend.git
+
    ```
 
 1. Install dependencies:
@@ -106,10 +104,8 @@ __Note:__ Before following these steps clone this repository. From now on the se
       └── dispatch305_react_frontend
    ```
 
-1. Assuming that your are at the __project_root__, clone the [Flask Backend API repository](https://github.com/Ceci-Aguilera/dispatch305_flask_backend_api):
-   ```sh
-      git clone https://github.com/Ceci-Aguilera/dispatch305_flask_backend_api.git
-   ```
+
+
    Now the __project_root__ folder should look like:
       ```sh
       project_root
@@ -117,33 +113,6 @@ __Note:__ Before following these steps clone this repository. From now on the se
       └── dispatch305_flask_backend_api
    ```
 
-- ### If Using Docker and Docker Compose
-   1. Copy the content of the docker-compose-connect.yml to a new file docker-compose.yml in the __project_root__. The docker-compose-connect.yml file can be found at the root of this repository and also at the root of the [Flask Backend API repository](https://github.com/Ceci-Aguilera/dispatch305_flask_backend_api) (Either file is fine to copy).
-   1. Follow the instruction to configure the environment variables of the __Flask__ backend API that can be found in the section __Install (Run) with Docker__ in the Readme.md of the [Flask Backend API repository](https://github.com/Ceci-Aguilera/dispatch305_flask_backend_api)
-   1. Follow the instructions on the __Install (Run) with Docker__ section of this Readme.md to configure the environment variables for this repo. The only env variable needed is the Flask Backend url, which by default should be [http://localhost:5000](http://localhost:5000).
-   __Note:__ Right now the __project_root__ should look like:
-         ```sh
-         project_root
-         ├── dispatch305_react_frontend
-         ├── dispatch305_flask_backend_api
-         └── docker-compose.yml
-      ```
-
-   1. Run the command:
-
-      ```bash
-      docker-compose up --build
-      ```
-
-   1. Congratulations =) !!! the frontend app should be running in [localhost:80](http://localhost:80) while the backend is at [localhost:5000](http://localhost:5000)
-
-
-- ### Running without Docker and Docker Compose
-   1. Follow the instructions of the __Installation without Docker__ section in the Readme.md of the  [Flask Backend API repository](https://github.com/Ceci-Aguilera/dispatch305_flask_backend_api) to configure and run the backend.
-   1. Follow the instructions of section __Installation without Docker__ of this Readme.md. Modify the REACT_APP_API_DOMAIN_NAME to be the url of the __Flask__ Backend API (by default it is [http://localhost:5050](http://localhost:5050)).
-   1. Congratulations =) !!! the frontend app should be running in [localhost:3000](http://localhost:3000) while the backend is at [localhost:5050](http://localhost:5050)
-
----
 
 
 
